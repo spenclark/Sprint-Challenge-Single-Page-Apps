@@ -21,6 +21,7 @@ export default function CharacterList() {
 
   return (
     <>
+      <Form />
       {chara.map(data => 
       <CharacterCard  key={data.name} data={data} />
       )}

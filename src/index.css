@@ -39,5 +39,22 @@ header h1 {
 }
 
 a{
+  width: 30%;
   margin: 2% auto;
+}
+
+.cardChar{
+  margin: 5% auto;
+  padding: 20px 0px;;
+  text-align: center;
+}
+.cardChar:hover{
+    
+    color: #7795f8;
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.cardChar img{
+  border-radius: 50%;
 }
