@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
 import CharacterCard from './CharacterCard';
-
+import Form from './form';
 
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
-  const [ chara, setChara ] = useState()
+  const [ chara, setChara ] = useState([])
 
   // Useeffect / axios
   useEffect(() => {
@@ -18,11 +18,6 @@ export default function CharacterList() {
     }
     Hook()
   }, []);
-
-  if (!chara) {
-    return <p>Requesting Data</p>
-      // if have time add loading animation
-  }
 
   return (
     <>

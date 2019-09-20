@@ -8,7 +8,9 @@ export default function App() {
   return (
     <main>
       <Header />
+      <Link exact to='/'>Home</Link>
       <Link to='/char'>Characters</Link>
+      
       <Route exact path='/' component={WelcomePage}/>
       <Route path='/char' component={CharacterList}/>
     </main>
