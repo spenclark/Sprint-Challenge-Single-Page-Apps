@@ -27,7 +27,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ]  Explain benefit(s) using `client-side routing`?
 
-> Answer:
+> Answer: The largest benifit is speed and size. Users dont have to download an entire webpage which results in less data being used.
 
 ## Project Set Up
 
