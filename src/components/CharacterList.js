@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
 import CharacterCard from './CharacterCard';
+import { Route } from 'react-router-dom';
 import Form from './form';
 
 export default function CharacterList() {
@@ -21,7 +22,9 @@ export default function CharacterList() {
 
   return (
     <>
-      <Form />
+      {/* insert form here */}
+      <Route render={props => (<Form chara={chara} {...props} />)} />
+
       {chara.map(data => 
       <CharacterCard  key={data.name} data={data} />
       )}
